@@ -1,0 +1,38 @@
+
+
+
+
+<!--<datalist id="items">
+
+  <label>
+    <select name="items">
+      <option *ngFor="let item of items" value={{item}}>
+    </select>
+  </label>
+
+</datalist>-->
+
+<div class="col-md-8">
+  <div>
+  <input type="text" name="items"  #itemId placeholder="Item Id"/>
+  <input type="button" (click)="getWklySales(itemId.value)" value="Search">
+  </div>
+  <div id="map">
+  </div>
+</div>
+
+<div class="col-md-4" *ngIf="storeData!=null">
+  <div style="margin-top: 20px;">
+  <table class="table">
+    <thead>
+    <th>Store Name</th>
+    <th>AvgWklyUnitSales</th>
+    </thead>
+    <tr *ngFor="let doc of storeData">
+      <td>{{doc.store!='ecomm'?storeLocs[doc.store].storeName:'Ecomm'}}</td>
+      <td>{{doc['AvgWklyUnitSales']}}</td>
+    </tr>
+    <tr><td></td><td><b>Sum : </b>{{sumAvgWklySales}}</td></tr>
+  </table>
+  </div>
+</div>

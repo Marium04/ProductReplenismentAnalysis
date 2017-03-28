@@ -6,10 +6,10 @@ const path = require("path");
 const http = require("http");
 const bodyParser = require('body-parser');
 const cors = require('cors');
-
+const dbApi = require('../server/dbApi');
 
 const app = express();
-
+app.use('/db',dbApi);
 // Parsers for POST data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

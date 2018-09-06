@@ -1,10 +1,10 @@
-import { CaSearsForecastingSalesPage } from './app.po';
+import { ForecastingSalesPage } from './app.po';
 
-describe('ca-sears-forecasting-sales App', function() {
-  let page: CaSearsForecastingSalesPage;
+describe('forecasting-sales App', function() {
+  let page: ForecastingSalesPage;
 
   beforeEach(() => {
-    page = new CaSearsForecastingSalesPage();
+    page = new ForecastingSalesPage();
   });
 
   it('should display message saying app works', () => {

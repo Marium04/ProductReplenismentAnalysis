@@ -1,3 +1,4 @@
+import * as L from 'leaflet';
 import {Component, OnInit, ElementRef} from '@angular/core';
 import {GetWklySalesService} from "../../Services/get-wkly-sales.service";
 import 'leaflet';
@@ -11,38 +12,47 @@ export class HomeComponent implements OnInit {
   storeData;
   sumAvgWklySales=0;
   storeLocs =
-    {'C001097':{marker:null,storeName:'TORONTO-PROMENADE',latLng:L.latLng(43.8067096,-79.4524759)},'C001328':{marker:null,storeName:'BURLINGTON',latLng:L.latLng(43.3259299,-79.8221605)},
-    'C001022':{marker:null,storeName:'GUELPH',latLng:L.latLng(43.5194326,-80.236036)},'C001016':{marker:null,storeName:'OSHAWA',latLng:L.latLng(43.8924655,-78.8812018)},
-    'C001093':{marker:null,storeName:'HAMILTON-LIMERIDGE',latLng:L.latLng(43.2190871,-79.8606729)},'C001322':{marker:null,storeName:'FAIRVIEW',latLng:L.latLng(43.7768716,-79.3462799)},
-    'C001013':{marker:null,storeName:'KITCHENER',latLng:L.latLng(43.423702,-80.4375684)},'C001088':{marker:null,storeName:'TORONTO-NEWMARKET',latLng:L.latLng(44.0562891,-79.4878338)},
-    'C001049':{marker:null,storeName:'BRAMALEA',latLng:L.latLng(43.7158617,-79.7239372)},'C001034':{marker:null,storeName:'PICKERING',latLng:L.latLng(43.8357555,-79.0843075)},
-    'C001323':{marker:null,storeName:'ERIN MILLS',latLng:L.latLng(43.5571542,-79.711927)}, 'C001033':{marker:null,storeName:'BRANTFORD',latLng:L.latLng(43.169989,-80.2398063)},
-    'C001308':{marker:null,storeName:'SCARBOROUGH 2',latLng:L.latLng(43.7761297,-79.2597903)},'C001321':{marker:null,storeName:'OAKVILLE',latLng:L.latLng(43.4615453,-79.6891721)}};
-  constructor(private salesService:GetWklySalesService,private elRef:ElementRef){
-    console.log( (window.screen.height) + "px");
+  {
+    'C001097': {marker: null, storeName: 'TORONTO-PROMENADE', latLng: L.latLng(43.8067096, -79.4524759)},
+    'C001328': {marker: null, storeName: 'BURLINGTON', latLng: L.latLng(43.3259299, -79.8221605)},
+    'C001022': {marker: null, storeName: 'GUELPH', latLng: L.latLng(43.5194326, -80.236036)},
+    'C001016': {marker: null, storeName: 'OSHAWA', latLng: L.latLng(43.8924655, -78.8812018)},
+    'C001093': {marker: null, storeName: 'HAMILTON-LIMERIDGE', latLng: L.latLng(43.2190871, -79.8606729)},
+    'C001322': {marker: null, storeName: 'FAIRVIEW', latLng: L.latLng(43.7768716, -79.3462799)},
+    'C001013': {marker: null, storeName: 'KITCHENER', latLng: L.latLng(43.423702, -80.4375684)},
+    'C001088': {marker: null, storeName: 'TORONTO-NEWMARKET', latLng: L.latLng(44.0562891, -79.4878338)},
+    'C001049': {marker: null, storeName: 'BRAMALEA', latLng: L.latLng(43.7158617, -79.7239372)},
+    'C001034': {marker: null, storeName: 'PICKERING', latLng: L.latLng(43.8357555, -79.0843075)},
+    'C001323': {marker: null, storeName: 'ERIN MILLS', latLng: L.latLng(43.5571542, -79.711927)},
+    'C001033': {marker: null, storeName: 'BRANTFORD', latLng: L.latLng(43.169989, -80.2398063)},
+    'C001308': {marker: null, storeName: 'SCARBOROUGH 2', latLng: L.latLng(43.7761297, -79.2597903)},
+    'C001321': {marker: null, storeName: 'OAKVILLE', latLng: L.latLng(43.4615453, -79.6891721)}
+  };
+  constructor(private salesService: GetWklySalesService, private elRef: ElementRef){
+    console.log( (window.screen.height) + 'px');
   }
-  getWklySales(itemId){
-    if(itemId === "")
+  getWklySales(itemId) {
+    if (itemId === '' ) {
       return;
-    let self = this;
+    }
+    const self = this;
     self.map.closePopup();
-    Object.keys(self.storeLocs).map((loc)=>{
-      if(self.storeLocs[loc].marker.getPopup()!== 'undefined'){
+    Object.keys(self.storeLocs).map((loc) => {
+      if (self.storeLocs[loc].marker.getPopup() !== 'undefined') {
         self.storeLocs[loc].marker.closePopup();
         self.storeLocs[loc].marker.unbindPopup();
       }
     });
-    this.salesService.getWklySalesFor(itemId).then((data)=>{
-      self.sumAvgWklySales =0;
-      console.log(data);
+    this.salesService.getWklySalesFor(itemId).then((data) => {
+      self.sumAvgWklySales = 0;
       this.storeData = data.items;
-      data.items.map((doc)=>{
-        self.sumAvgWklySales+=doc['AvgWklyUnitSales'];
-        if(self.storeLocs[doc['store']].marker.getPopup() !== 'undefined'){
+      data.items.map((doc) => {
+        self.sumAvgWklySales += doc['AvgWklyUnitSales'];
+        if ( self.storeLocs[doc['store']].marker.getPopup() !== 'undefined') {
           self.storeLocs[doc['store']].marker.unbindPopup();
         }
-        self.storeLocs[doc['store']].marker.bindPopup('<b>'+self.storeLocs[doc['store']].storeName+'</b><br/>'+
-          doc['item_id']+'<br/>AvgWklyUnitSales : '+doc['AvgWklyUnitSales'].toString(),{'autoClose':false}).openPopup();
+        self.storeLocs[doc['store']].marker.bindPopup('<b>' + self.storeLocs[doc['store']].storeName + '</b><br/>' +
+          doc['item_id'] + '<br/>AvgWklyUnitSales : ' + doc['AvgWklyUnitSales'].toString(), {'autoClose': false}).openPopup();
       });
     });
   }
@@ -51,7 +61,7 @@ export class HomeComponent implements OnInit {
     //this.salesService.getItemIds().then((items)=> this.items = items.itemIds);
     this.elRef.nativeElement.querySelector('#map').style.height = (window.screen.height) + "px";
   }
-  ngAfterViewInit(){
+  ngAfterViewInit() {
     L.Icon.Default.imagePath = 'assets/images/';
     this.map = L.map('map',{closePopupOnClick: false})
       .setView([43.620170616189924,-79.66598510742189], 8);

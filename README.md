@@ -1,4 +1,4 @@
-# CaSearsForecastingSales
+# ForecastingSales
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3. The idea of this is provide insights on product replenishment in different physical stores. With help of a map it shows how each store did.
 

@@ -14,8 +14,8 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 
 1. Mongo should be configured.
 2. There is a dump folder in the repo which contains sample for different stores. Just restore that bson into mongodb in collection "ontarioStores" inside "searsCa" database.
-3. Once the mongodb is configured with data. Navigate to `http://localhost:5050`. And try entering following product ids to see the output:
-603-28032-000
-603-28062-000
-603-34001-000
-603-34003-000
+3. Once the mongodb is configured with data. Navigate to `http://localhost:5050`. And try entering following product ids one by one to see the output:
+- 603-28032-000
+- 603-28062-000
+- 603-34001-000
+- 603-34003-000

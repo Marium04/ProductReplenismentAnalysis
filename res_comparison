@@ -1,0 +1,2366 @@
+{
+  "locked": false,
+  "submitted_date": null,
+  "risk_profiles": {
+    "current": {
+      "pie_data": {
+        "data": [
+          {
+            "type": {
+              "key": "Portfolio Allocation",
+              "description": "Here's how we suggest you invest your money"
+            },
+            "dimensions": [
+              {
+                "key": "Fixed Income",
+                "description": "These are bonds.",
+                "y": 40,
+                "type": "fixed"
+              },
+              {
+                "key": "Equities",
+                "description": "These are stocks.",
+                "y": 60,
+                "type": "equity"
+              }
+            ]
+          }
+        ],
+        "legend": [],
+        "total": 0,
+        "name": "Balanced Growth & Income"
+      },
+      "kyc_instance": {
+        "_id": "5bc790444ebf040014a724f1",
+        "kyc": "5bc64ae11757ac156920adf0",
+        "organization_id": 1,
+        "website_user_id": 20468,
+        "website_user_uuid": "e6d93575-21e4-4def-baad-f578e4a8e31d",
+        "score": 40,
+        "raw_score": 40,
+        "assets": [
+          {
+            "percentage": 60,
+            "asset": {
+              "_id": "58cc415cc4791caa2e8e7755",
+              "ibm_security_number": "aligned_eq",
+              "ticker": "aligned_eq",
+              "asset_class": "equity",
+              "column_map": "aligned_eq",
+              "asset_class_ref": {
+                "_id": "58cc415c13f5d516b387ac2d",
+                "name": "equity",
+                "updatedAt": "2017-03-20T17:33:47.431Z",
+                "asset_class_type": {
+                  "_id": "58cad8f313f5d516b387ab7c",
+                  "name": "equity",
+                  "updatedAt": "2017-03-20T17:33:47.415Z",
+                  "description": "Equities",
+                  "__v": 0,
+                  "createdAt": "2017-03-16T18:26:59.676Z",
+                  "description_long": "These are stocks."
+                },
+                "description": "Equities",
+                "__v": 0,
+                "createdAt": "2017-03-17T20:04:44.369Z",
+                "description_long": "These are stocks."
+              },
+              "__v": 0,
+              "fund_fact_sheet_url": "",
+              "name": "",
+              "deprecate": false
+            },
+            "_id": "5bc791614ebf040014a72510"
+          },
+          {
+            "percentage": 40,
+            "asset": {
+              "_id": "58cc415cc4791caa2e8e7756",
+              "ibm_security_number": "aligned_fixed",
+              "ticker": "aligned_fixed",
+              "asset_class": "fixed",
+              "column_map": "aligned_fixed",
+              "asset_class_ref": {
+                "_id": "58cad8f313f5d516b387ab8a",
+                "name": "fixed",
+                "updatedAt": "2017-03-20T17:33:47.433Z",
+                "asset_class_type": {
+                  "_id": "58cad8f313f5d516b387ab7d",
+                  "name": "fixed",
+                  "updatedAt": "2017-03-20T17:33:47.421Z",
+                  "description": "Fixed Income",
+                  "__v": 0,
+                  "createdAt": "2017-03-16T18:26:59.680Z",
+                  "description_long": "These are bonds."
+                },
+                "description": "Fixed Income",
+                "__v": 0,
+                "createdAt": "2017-03-16T18:26:59.752Z",
+                "description_long": "These are bonds."
+              },
+              "__v": 0,
+              "fund_fact_sheet_url": "",
+              "name": "",
+              "deprecate": false
+            },
+            "_id": "5bc791614ebf040014a72511"
+          }
+        ],
+        "active": false,
+        "pm_approved_date": "2018-10-17T19:45:37.191Z",
+        "valid_at": "2018-10-17T19:45:37.191Z",
+        "pm_approved": true,
+        "pm_approved_by": "djohal+advisor@nestwealth.com",
+        "pm_submitted_date": null,
+        "pm_submitted": false,
+        "client_submitted": true,
+        "client_submitted_date": "2018-10-17T19:42:55.542Z",
+        "modified_at": "2018-10-17T19:45:37.394Z",
+        "created_at": "2018-10-17T19:40:52.931Z",
+        "goal_id": "1138a127-53c7-497d-9dbb-0366648d8873",
+        "cash_percentage": 1,
+        "number_of_questions": 0,
+        "completed_responses": 0,
+        "version": "2",
+        "completed_steps": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "steps": [
+          {
+            "indicator": 1,
+            "ng_if": {},
+            "rows": [
+              {
+                "_id": "5bc64ae21757ac156920ae47",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "Income",
+                          "formula": "x + 0",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920adf5"
+                        },
+                        {
+                          "id": 1,
+                          "text": "Growth",
+                          "formula": "x + 2",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920adf4"
+                        }
+                      ],
+                      "placeholder": null,
+                      "model": "objective",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae48",
+                    "description": "",
+                    "label": "What are your investment objectives?",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae45",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "None",
+                          "formula": "x + 0",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920adfb"
+                        },
+                        {
+                          "id": 1,
+                          "text": "Monthly",
+                          "formula": "x + -5",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920adfa"
+                        },
+                        {
+                          "id": 2,
+                          "text": "Quarterly",
+                          "formula": "x + 0",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920adf9"
+                        },
+                        {
+                          "id": 3,
+                          "text": "Annually",
+                          "formula": "x + 0",
+                          "value": "3",
+                          "_id": "5bc64ae11757ac156920adf8"
+                        }
+                      ],
+                      "placeholder": null,
+                      "model": "withdrawal",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae46",
+                    "description": "",
+                    "label": "Do you anticipate taking funds from this account? ",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae43",
+                "ng_if": {
+                  "or": [
+                    {
+                      "ng_if_value": "1",
+                      "ng_if_model": "withdrawal"
+                    },
+                    {
+                      "ng_if_value": "2",
+                      "ng_if_model": "withdrawal"
+                    },
+                    {
+                      "ng_if_value": "3",
+                      "ng_if_model": "withdrawal"
+                    }
+                  ]
+                },
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "numeric",
+                      "mask": "currency",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "$100",
+                      "model": "withdrawal_amount",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae44",
+                    "description": "",
+                    "label": "If yes, how much per period?",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae41",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "Do Nothing / No Change",
+                          "formula": "x + 0",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae02"
+                        },
+                        {
+                          "id": 1,
+                          "text": "Rebalance (Sell bonds and purchase stocks)",
+                          "formula": "x + 4",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae01"
+                        },
+                        {
+                          "id": 2,
+                          "text": "Purchase more stocks",
+                          "formula": "x + 6",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920ae00"
+                        },
+                        {
+                          "id": 3,
+                          "text": "Move all liquid investments to cash or bonds",
+                          "formula": "x + -4",
+                          "value": "3",
+                          "_id": "5bc64ae11757ac156920adff"
+                        }
+                      ],
+                      "placeholder": null,
+                      "model": "loss_comfort",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae42",
+                    "description": "",
+                    "label": "If your portfolio were to decrease in value by 25% due to market conditions, what would you do?",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae3f",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "select",
+                      "validate": "select",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "Less than 1yr",
+                          "formula": "x + 0",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae09"
+                        },
+                        {
+                          "id": 1,
+                          "text": "1 to 3 years",
+                          "formula": "x + 2",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae08"
+                        },
+                        {
+                          "id": 2,
+                          "text": "4 to 5 years",
+                          "formula": "x + 2",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920ae07"
+                        },
+                        {
+                          "id": 3,
+                          "text": "6 to 9 years",
+                          "formula": "x + 2",
+                          "value": "3",
+                          "_id": "5bc64ae11757ac156920ae06"
+                        },
+                        {
+                          "id": 4,
+                          "text": "10+ years",
+                          "formula": "x + 2",
+                          "value": "4",
+                          "_id": "5bc64ae11757ac156920ae05"
+                        }
+                      ],
+                      "placeholder": "select an option",
+                      "model": "horizon",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae40",
+                    "description": "",
+                    "label": "What is the time horizon for this account?",
+                    "tooltip": {
+                      "content": "To properly determine your asset-mix, knowing how long we have to work with your money is important.",
+                      "title": "Your Horizon"
+                    }
+                  }
+                ]
+              }
+            ],
+            "content": {
+              "button": {}
+            },
+            "complete": true,
+            "showing": false
+          },
+          {
+            "indicator": 2,
+            "ng_if": {},
+            "rows": [
+              {
+                "_id": "5bc64ae21757ac156920ae4c",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "I have not set aside savings to cover such expenses",
+                          "formula": "x + 0",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae0d"
+                        },
+                        {
+                          "id": 1,
+                          "text": "I have set aside savings to cover such expenses",
+                          "formula": "x + 4",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae0c"
+                        }
+                      ],
+                      "placeholder": null,
+                      "model": "savings",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae4d",
+                    "description": "",
+                    "label": "Have you set aside savings to cover expenses such as purchasing a home, college tuition, or financial emergency?",
+                    "tooltip": {
+                      "title": "Planning Consideration:",
+                      "content": "Under unforeseen circumstances, such as a loss of income, many people need to draw on “long-term” money for short-term needs. If you don’t have an emergency fund, it may be appropriate to build a conservative portfolio to create an emergency fund, and then build long term investments."
+                    }
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae4a",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "Less than 25%",
+                          "formula": "x + 8",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae13"
+                        },
+                        {
+                          "id": 1,
+                          "text": "Between 25% and 50%",
+                          "formula": "x + 6",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae12"
+                        },
+                        {
+                          "id": 2,
+                          "text": "Between 51% and 75%",
+                          "formula": "x + 4",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920ae11"
+                        },
+                        {
+                          "id": 3,
+                          "text": "More than 75%",
+                          "formula": "x + 2",
+                          "value": "3",
+                          "_id": "5bc64ae11757ac156920ae10"
+                        }
+                      ],
+                      "placeholder": null,
+                      "model": "investable_assets",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae4b",
+                    "description": "",
+                    "label": "Approximately what portion of your total investable assets is in your retirement savings plan at work? (Investable assets include your emergency fund, plan assets, bank accounts, GICs, mutual funds, annuities, cash value of life insurance, stocks, bonds, investment real estate, etc. They do not include your principal residence or vacation home.)",
+                    "tooltip": {}
+                  }
+                ]
+              }
+            ],
+            "content": {
+              "button": {}
+            },
+            "complete": true,
+            "showing": false
+          },
+          {
+            "indicator": 3,
+            "ng_if": {},
+            "rows": [
+              {
+                "_id": "5bc64ae21757ac156920ae51",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "select",
+                      "validate": "select",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "Limited",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae19"
+                        },
+                        {
+                          "id": 1,
+                          "text": "Fair",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae18"
+                        },
+                        {
+                          "id": 2,
+                          "text": "Good",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920ae17"
+                        },
+                        {
+                          "id": 3,
+                          "text": "Sophisticated",
+                          "value": "3",
+                          "_id": "5bc64ae11757ac156920ae16"
+                        }
+                      ],
+                      "placeholder": "select an option",
+                      "model": "knowledge",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae52",
+                    "description": "",
+                    "label": "Investment Knowledge",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae4f",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "None",
+                          "formula": "x + 5",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae20"
+                        },
+                        {
+                          "id": 1,
+                          "text": "One",
+                          "formula": "x + 4",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae1f"
+                        },
+                        {
+                          "id": 2,
+                          "text": "Two",
+                          "formula": "x + 3",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920ae1e"
+                        },
+                        {
+                          "id": 3,
+                          "text": "Three",
+                          "formula": "x + 2",
+                          "value": "3",
+                          "_id": "5bc64ae11757ac156920ae1d"
+                        },
+                        {
+                          "id": 3,
+                          "text": "More than three",
+                          "formula": "x + 0",
+                          "value": "4",
+                          "_id": "5bc64ae11757ac156920ae1c"
+                        }
+                      ],
+                      "placeholder": null,
+                      "model": "dependents",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae50",
+                    "description": "",
+                    "label": "How many dependents do you have? (include spouse, children you support, elderly parents, etc.)",
+                    "tooltip": {}
+                  }
+                ]
+              }
+            ],
+            "content": {
+              "button": {}
+            },
+            "complete": true,
+            "showing": false
+          },
+          {
+            "indicator": 4,
+            "ng_if": {},
+            "rows": [
+              {
+                "_id": "5bc64ae21757ac156920ae58",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "Less than 10%",
+                          "formula": "x + 8",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae26"
+                        },
+                        {
+                          "id": 1,
+                          "text": "Between 10% and 25%",
+                          "formula": "x + 6",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae25"
+                        },
+                        {
+                          "id": 2,
+                          "text": "Between 26% and 50%",
+                          "formula": "x + 4",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920ae24"
+                        },
+                        {
+                          "id": 3,
+                          "text": "More than 50%",
+                          "formula": "x + 2",
+                          "value": "3",
+                          "_id": "5bc64ae11757ac156920ae23"
+                        }
+                      ],
+                      "placeholder": null,
+                      "model": "debt",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae59",
+                    "description": "",
+                    "label": "Approximately what portion of your monthly take-home income goes toward paying o  debt other than a home mortgage? (auto loans, credit cards, etc.)",
+                    "tooltip": {
+                      "content": "If a large portion of your income goes toward paying debt, you are more likely to need to have cash available to handle unforseen circumstances."
+                    }
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae56",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "Be willing to take a lot more risk with all of your money?",
+                          "formula": "x + 8",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae2d"
+                        },
+                        {
+                          "id": 1,
+                          "text": "Be willing to take a lot more risk with some of your money?",
+                          "formula": "x + 6",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae2c"
+                        },
+                        {
+                          "id": 2,
+                          "text": "Be willing to take a little more risk with all of your money?",
+                          "formula": "x + 4",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920ae2b"
+                        },
+                        {
+                          "id": 3,
+                          "text": "Be willing to take a little more risk with some of your money?",
+                          "formula": "x + 2",
+                          "value": "3",
+                          "_id": "5bc64ae11757ac156920ae2a"
+                        },
+                        {
+                          "id": 4,
+                          "text": "Be unlikely to take much more risk?",
+                          "formula": "x + 0",
+                          "value": "4",
+                          "_id": "5bc64ae11757ac156920ae29"
+                        }
+                      ],
+                      "placeholder": null,
+                      "model": "increase_risk",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae57",
+                    "description": "",
+                    "label": "If you could increase your chances of improving your returns by taking more risk, would you...",
+                    "tooltip": {
+                      "title": "Planning Consideration:",
+                      "content": "Your comfort level with investment risk is important in determining how aggressively or conservatively you choose to invest."
+                    }
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae54",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "Maintain purchasing power",
+                          "formula": "x + 2",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae32"
+                        },
+                        {
+                          "id": 1,
+                          "text": "Leave to heirs with purchasing power maintained",
+                          "formula": "x + 4",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae31"
+                        },
+                        {
+                          "id": 2,
+                          "text": "Support lifestyle in retirement",
+                          "formula": "x + 0",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920ae30"
+                        }
+                      ],
+                      "placeholder": "Select an option",
+                      "model": "goal",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae55",
+                    "description": "",
+                    "label": "What do you hope to accomplish with your wealth?",
+                    "tooltip": {
+                      "content": "To properly advise, we need to understand your goals.",
+                      "title": "Your Goal"
+                    }
+                  }
+                ]
+              }
+            ],
+            "content": {
+              "button": {}
+            },
+            "complete": true,
+            "showing": false
+          },
+          {
+            "indicator": 5,
+            "ng_if": {},
+            "rows": [
+              {
+                "_id": "5bc64ae21757ac156920ae63",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "numeric",
+                      "mask": "currency",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "$0",
+                      "model": "annual_living_expenses",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae64",
+                    "description": "",
+                    "label": "What is the amount of your annual living expenses?",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae61",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "numeric",
+                      "mask": "currency",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "$0",
+                      "model": "net_liquid_assets",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae62",
+                    "description": "",
+                    "label": "Estimated Net Liquid Assets",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae5f",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "numeric",
+                      "mask": "currency",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "$100,000",
+                      "model": "current_income",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae60",
+                    "description": "",
+                    "label": "What is your current income?",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae5d",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "year_future",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "2030",
+                      "model": "period",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae5e",
+                    "description": "",
+                    "label": "When do you plan to retire?",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae5b",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "numeric",
+                      "mask": "currency",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "$0",
+                      "model": "other_savings",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae5c",
+                    "description": "",
+                    "label": "Do you expect any other savings in the future? (i.e. inheritance)",
+                    "tooltip": {}
+                  }
+                ]
+              }
+            ],
+            "content": {
+              "button": {}
+            },
+            "complete": true,
+            "showing": false
+          },
+          {
+            "indicator": 6,
+            "ng_if": {},
+            "rows": [
+              {
+                "_id": "5bc64ae21757ac156920ae6a",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "numeric",
+                      "mask": "currency",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "$0",
+                      "model": "coporate_registered_plans",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae6b",
+                    "description": "",
+                    "label": "Corporate Sponsored Registered Plans",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae68",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "numeric",
+                      "mask": "currency",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "$0",
+                      "model": "other_registered_accounts",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae69",
+                    "description": "",
+                    "label": "Other Registered Accounts",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae66",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "numeric",
+                      "mask": "currency",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "$0",
+                      "model": "non_registered_accounts",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae67",
+                    "description": "",
+                    "label": "Non-registered Accounts",
+                    "tooltip": {}
+                  }
+                ]
+              }
+            ],
+            "title": "What is your current annual retirement savings?",
+            "content": {
+              "button": {}
+            },
+            "complete": true,
+            "showing": false
+          },
+          {
+            "indicator": 7,
+            "ng_if": {},
+            "rows": [
+              {
+                "_id": "5bc64ae21757ac156920ae6d",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": null,
+                      "model": "notes_or_comments",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae6e",
+                    "description": "",
+                    "label": "Are there additional considerations your advisor should know?",
+                    "tooltip": {}
+                  }
+                ]
+              }
+            ],
+            "content": {
+              "button": {}
+            },
+            "complete": true,
+            "showing": false
+          },
+          {
+            "indicator": 7,
+            "ng_if": {},
+            "rows": [
+              {
+                "_id": "5bc64ae21757ac156920ae70",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "readonly": false,
+                      "options": []
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae71"
+                  }
+                ]
+              }
+            ],
+            "title": "use me to find me",
+            "content": {
+              "button": {
+                "text": "Continue",
+                "state": "onboarding.form"
+              },
+              "title": "Good Job! We're almost there!",
+              "subtitle": "If you're happy with this portfolio, please go ahead to the next and final section."
+            },
+            "complete": false,
+            "showing": true
+          }
+        ],
+        "onboarding_locked": false,
+        "is_client_approved": false
+      },
+      "kyc_answers": {
+        "uuid": "e6d93575-21e4-4def-baad-f578e4a8e31d",
+        "_id": "5bc790444ebf040014a724f1",
+        "user_saved": true,
+        "formulated_answers": [],
+        "first_name": "djohal",
+        "last_name": "client",
+        "objective": "1",
+        "withdrawal": "3",
+        "withdrawal_amount": "200",
+        "loss_comfort": "3",
+        "horizon": "4",
+        "savings": "1",
+        "investable_assets": "3",
+        "knowledge": "0",
+        "dependents": "4",
+        "debt": "3",
+        "increase_risk": "3",
+        "goal": "2",
+        "annual_living_expenses": "0",
+        "net_liquid_assets": "0",
+        "current_income": "20000",
+        "period": "2050",
+        "coporate_registered_plans": "0",
+        "other_registered_accounts": "0",
+        "non_registered_accounts": "0",
+        "other_savings": "0",
+        "notes_or_comments": "No"
+      },
+      "score_data": [
+        {
+          "first_name": 0
+        },
+        {
+          "last_name": 0
+        },
+        {
+          "objective": 2
+        },
+        {
+          "withdrawal": 2
+        },
+        {
+          "withdrawal_amount": 2
+        },
+        {
+          "loss_comfort": -2
+        },
+        {
+          "horizon": 0
+        },
+        {
+          "savings": 4
+        },
+        {
+          "investable_assets": 6
+        },
+        {
+          "knowledge": 6
+        },
+        {
+          "dependents": 6
+        },
+        {
+          "debt": 8
+        },
+        {
+          "increase_risk": 10
+        },
+        {
+          "goal": 10
+        },
+        {
+          "annual_living_expenses": 10
+        },
+        {
+          "net_liquid_assets": 10
+        },
+        {
+          "current_income": 10
+        },
+        {
+          "period": 10
+        },
+        {
+          "coporate_registered_plans": 10
+        },
+        {
+          "other_registered_accounts": 10
+        },
+        {
+          "non_registered_accounts": 10
+        },
+        {
+          "other_savings": 40
+        },
+        {
+          "notes_or_comments": 40
+        }
+      ],
+      "complete": true
+    },
+    "new": {
+      "pie_data": {
+        "data": [
+          {
+            "type": {
+              "key": "Portfolio Allocation",
+              "description": "Here's how we suggest you invest your money"
+            },
+            "dimensions": [
+              {
+                "key": "Fixed Income",
+                "description": "These are bonds.",
+                "y": 80,
+                "type": "fixed"
+              },
+              {
+                "key": "Equities",
+                "description": "These are stocks.",
+                "y": 20,
+                "type": "equity"
+              }
+            ]
+          }
+        ],
+        "legend": [],
+        "total": 0,
+        "name": "Income"
+      },
+      "kyc_instance": {
+        "_id": "5bc7918d7655df000e79a47d",
+        "kyc": "5bc64ae11757ac156920adf0",
+        "organization_id": 1,
+        "website_user_id": 20468,
+        "website_user_uuid": "e6d93575-21e4-4def-baad-f578e4a8e31d",
+        "score": 0,
+        "raw_score": 0,
+        "assets": [
+          {
+            "asset": {
+              "_id": "58cc415cc4791caa2e8e7755",
+              "ibm_security_number": "aligned_eq",
+              "ticker": "aligned_eq",
+              "asset_class": "equity",
+              "column_map": "aligned_eq",
+              "asset_class_ref": {
+                "_id": "58cc415c13f5d516b387ac2d",
+                "name": "equity",
+                "updatedAt": "2017-03-20T17:33:47.431Z",
+                "asset_class_type": {
+                  "_id": "58cad8f313f5d516b387ab7c",
+                  "name": "equity",
+                  "updatedAt": "2017-03-20T17:33:47.415Z",
+                  "description": "Equities",
+                  "__v": 0,
+                  "createdAt": "2017-03-16T18:26:59.676Z",
+                  "description_long": "These are stocks."
+                },
+                "description": "Equities",
+                "__v": 0,
+                "createdAt": "2017-03-17T20:04:44.369Z",
+                "description_long": "These are stocks."
+              },
+              "__v": 0,
+              "fund_fact_sheet_url": "",
+              "name": "",
+              "deprecate": false
+            },
+            "percentage": 60,
+            "_id": "5bc7918d7655df000e79a496"
+          },
+          {
+            "asset": {
+              "_id": "58cc415cc4791caa2e8e7756",
+              "ibm_security_number": "aligned_fixed",
+              "ticker": "aligned_fixed",
+              "asset_class": "fixed",
+              "column_map": "aligned_fixed",
+              "asset_class_ref": {
+                "_id": "58cad8f313f5d516b387ab8a",
+                "name": "fixed",
+                "updatedAt": "2017-03-20T17:33:47.433Z",
+                "asset_class_type": {
+                  "_id": "58cad8f313f5d516b387ab7d",
+                  "name": "fixed",
+                  "updatedAt": "2017-03-20T17:33:47.421Z",
+                  "description": "Fixed Income",
+                  "__v": 0,
+                  "createdAt": "2017-03-16T18:26:59.680Z",
+                  "description_long": "These are bonds."
+                },
+                "description": "Fixed Income",
+                "__v": 0,
+                "createdAt": "2017-03-16T18:26:59.752Z",
+                "description_long": "These are bonds."
+              },
+              "__v": 0,
+              "fund_fact_sheet_url": "",
+              "name": "",
+              "deprecate": false
+            },
+            "percentage": 40,
+            "_id": "5bc7918d7655df000e79a495"
+          }
+        ],
+        "active": false,
+        "pm_approved_date": null,
+        "valid_at": "2018-10-17T19:45:37.191Z",
+        "pm_approved": false,
+        "pm_approved_by": null,
+        "pm_submitted_date": null,
+        "pm_submitted": false,
+        "client_submitted": false,
+        "client_submitted_date": null,
+        "modified_at": "2018-10-17T19:48:35.362Z",
+        "created_at": "2018-10-17T19:46:21.371Z",
+        "goal_id": "1138a127-53c7-497d-9dbb-0366648d8873",
+        "cash_percentage": 1,
+        "number_of_questions": 0,
+        "completed_responses": 0,
+        "version": "2",
+        "completed_steps": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "steps": [
+          {
+            "indicator": 1,
+            "ng_if": {},
+            "rows": [
+              {
+                "_id": "5bc64ae21757ac156920ae47",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "Income",
+                          "formula": "x + 0",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920adf5"
+                        },
+                        {
+                          "id": 1,
+                          "text": "Growth",
+                          "formula": "x + 2",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920adf4"
+                        }
+                      ],
+                      "placeholder": null,
+                      "model": "objective",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae48",
+                    "description": "",
+                    "label": "What are your investment objectives?",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae45",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "None",
+                          "formula": "x + 0",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920adfb"
+                        },
+                        {
+                          "id": 1,
+                          "text": "Monthly",
+                          "formula": "x + -5",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920adfa"
+                        },
+                        {
+                          "id": 2,
+                          "text": "Quarterly",
+                          "formula": "x + 0",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920adf9"
+                        },
+                        {
+                          "id": 3,
+                          "text": "Annually",
+                          "formula": "x + 0",
+                          "value": "3",
+                          "_id": "5bc64ae11757ac156920adf8"
+                        }
+                      ],
+                      "placeholder": null,
+                      "model": "withdrawal",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae46",
+                    "description": "",
+                    "label": "Do you anticipate taking funds from this account? ",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae43",
+                "ng_if": {
+                  "or": [
+                    {
+                      "ng_if_value": "1",
+                      "ng_if_model": "withdrawal"
+                    },
+                    {
+                      "ng_if_value": "2",
+                      "ng_if_model": "withdrawal"
+                    },
+                    {
+                      "ng_if_value": "3",
+                      "ng_if_model": "withdrawal"
+                    }
+                  ]
+                },
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "numeric",
+                      "mask": "currency",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "$100",
+                      "model": "withdrawal_amount",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae44",
+                    "description": "",
+                    "label": "If yes, how much per period?",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae41",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "Do Nothing / No Change",
+                          "formula": "x + 0",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae02"
+                        },
+                        {
+                          "id": 1,
+                          "text": "Rebalance (Sell bonds and purchase stocks)",
+                          "formula": "x + 4",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae01"
+                        },
+                        {
+                          "id": 2,
+                          "text": "Purchase more stocks",
+                          "formula": "x + 6",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920ae00"
+                        },
+                        {
+                          "id": 3,
+                          "text": "Move all liquid investments to cash or bonds",
+                          "formula": "x + -4",
+                          "value": "3",
+                          "_id": "5bc64ae11757ac156920adff"
+                        }
+                      ],
+                      "placeholder": null,
+                      "model": "loss_comfort",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae42",
+                    "description": "",
+                    "label": "If your portfolio were to decrease in value by 25% due to market conditions, what would you do?",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae3f",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "select",
+                      "validate": "select",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "Less than 1yr",
+                          "formula": "x + 0",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae09"
+                        },
+                        {
+                          "id": 1,
+                          "text": "1 to 3 years",
+                          "formula": "x + 2",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae08"
+                        },
+                        {
+                          "id": 2,
+                          "text": "4 to 5 years",
+                          "formula": "x + 2",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920ae07"
+                        },
+                        {
+                          "id": 3,
+                          "text": "6 to 9 years",
+                          "formula": "x + 2",
+                          "value": "3",
+                          "_id": "5bc64ae11757ac156920ae06"
+                        },
+                        {
+                          "id": 4,
+                          "text": "10+ years",
+                          "formula": "x + 2",
+                          "value": "4",
+                          "_id": "5bc64ae11757ac156920ae05"
+                        }
+                      ],
+                      "placeholder": "select an option",
+                      "model": "horizon",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae40",
+                    "description": "",
+                    "label": "What is the time horizon for this account?",
+                    "tooltip": {
+                      "content": "To properly determine your asset-mix, knowing how long we have to work with your money is important.",
+                      "title": "Your Horizon"
+                    }
+                  }
+                ]
+              }
+            ],
+            "content": {
+              "button": {}
+            },
+            "complete": true,
+            "showing": false
+          },
+          {
+            "indicator": 2,
+            "ng_if": {},
+            "rows": [
+              {
+                "_id": "5bc64ae21757ac156920ae4c",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "I have not set aside savings to cover such expenses",
+                          "formula": "x + 0",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae0d"
+                        },
+                        {
+                          "id": 1,
+                          "text": "I have set aside savings to cover such expenses",
+                          "formula": "x + 4",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae0c"
+                        }
+                      ],
+                      "placeholder": null,
+                      "model": "savings",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae4d",
+                    "description": "",
+                    "label": "Have you set aside savings to cover expenses such as purchasing a home, college tuition, or financial emergency?",
+                    "tooltip": {
+                      "title": "Planning Consideration:",
+                      "content": "Under unforeseen circumstances, such as a loss of income, many people need to draw on “long-term” money for short-term needs. If you don’t have an emergency fund, it may be appropriate to build a conservative portfolio to create an emergency fund, and then build long term investments."
+                    }
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae4a",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "Less than 25%",
+                          "formula": "x + 8",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae13"
+                        },
+                        {
+                          "id": 1,
+                          "text": "Between 25% and 50%",
+                          "formula": "x + 6",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae12"
+                        },
+                        {
+                          "id": 2,
+                          "text": "Between 51% and 75%",
+                          "formula": "x + 4",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920ae11"
+                        },
+                        {
+                          "id": 3,
+                          "text": "More than 75%",
+                          "formula": "x + 2",
+                          "value": "3",
+                          "_id": "5bc64ae11757ac156920ae10"
+                        }
+                      ],
+                      "placeholder": null,
+                      "model": "investable_assets",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae4b",
+                    "description": "",
+                    "label": "Approximately what portion of your total investable assets is in your retirement savings plan at work? (Investable assets include your emergency fund, plan assets, bank accounts, GICs, mutual funds, annuities, cash value of life insurance, stocks, bonds, investment real estate, etc. They do not include your principal residence or vacation home.)",
+                    "tooltip": {}
+                  }
+                ]
+              }
+            ],
+            "content": {
+              "button": {}
+            },
+            "complete": true,
+            "showing": false
+          },
+          {
+            "indicator": 3,
+            "ng_if": {},
+            "rows": [
+              {
+                "_id": "5bc64ae21757ac156920ae51",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "select",
+                      "validate": "select",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "Limited",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae19"
+                        },
+                        {
+                          "id": 1,
+                          "text": "Fair",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae18"
+                        },
+                        {
+                          "id": 2,
+                          "text": "Good",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920ae17"
+                        },
+                        {
+                          "id": 3,
+                          "text": "Sophisticated",
+                          "value": "3",
+                          "_id": "5bc64ae11757ac156920ae16"
+                        }
+                      ],
+                      "placeholder": "select an option",
+                      "model": "knowledge",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae52",
+                    "description": "",
+                    "label": "Investment Knowledge",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae4f",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "None",
+                          "formula": "x + 5",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae20"
+                        },
+                        {
+                          "id": 1,
+                          "text": "One",
+                          "formula": "x + 4",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae1f"
+                        },
+                        {
+                          "id": 2,
+                          "text": "Two",
+                          "formula": "x + 3",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920ae1e"
+                        },
+                        {
+                          "id": 3,
+                          "text": "Three",
+                          "formula": "x + 2",
+                          "value": "3",
+                          "_id": "5bc64ae11757ac156920ae1d"
+                        },
+                        {
+                          "id": 3,
+                          "text": "More than three",
+                          "formula": "x + 0",
+                          "value": "4",
+                          "_id": "5bc64ae11757ac156920ae1c"
+                        }
+                      ],
+                      "placeholder": null,
+                      "model": "dependents",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae50",
+                    "description": "",
+                    "label": "How many dependents do you have? (include spouse, children you support, elderly parents, etc.)",
+                    "tooltip": {}
+                  }
+                ]
+              }
+            ],
+            "content": {
+              "button": {}
+            },
+            "complete": true,
+            "showing": false
+          },
+          {
+            "indicator": 4,
+            "ng_if": {},
+            "rows": [
+              {
+                "_id": "5bc64ae21757ac156920ae58",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "Less than 10%",
+                          "formula": "x + 8",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae26"
+                        },
+                        {
+                          "id": 1,
+                          "text": "Between 10% and 25%",
+                          "formula": "x + 6",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae25"
+                        },
+                        {
+                          "id": 2,
+                          "text": "Between 26% and 50%",
+                          "formula": "x + 4",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920ae24"
+                        },
+                        {
+                          "id": 3,
+                          "text": "More than 50%",
+                          "formula": "x + 2",
+                          "value": "3",
+                          "_id": "5bc64ae11757ac156920ae23"
+                        }
+                      ],
+                      "placeholder": null,
+                      "model": "debt",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae59",
+                    "description": "",
+                    "label": "Approximately what portion of your monthly take-home income goes toward paying o  debt other than a home mortgage? (auto loans, credit cards, etc.)",
+                    "tooltip": {
+                      "content": "If a large portion of your income goes toward paying debt, you are more likely to need to have cash available to handle unforseen circumstances."
+                    }
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae56",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "Be willing to take a lot more risk with all of your money?",
+                          "formula": "x + 8",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae2d"
+                        },
+                        {
+                          "id": 1,
+                          "text": "Be willing to take a lot more risk with some of your money?",
+                          "formula": "x + 6",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae2c"
+                        },
+                        {
+                          "id": 2,
+                          "text": "Be willing to take a little more risk with all of your money?",
+                          "formula": "x + 4",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920ae2b"
+                        },
+                        {
+                          "id": 3,
+                          "text": "Be willing to take a little more risk with some of your money?",
+                          "formula": "x + 2",
+                          "value": "3",
+                          "_id": "5bc64ae11757ac156920ae2a"
+                        },
+                        {
+                          "id": 4,
+                          "text": "Be unlikely to take much more risk?",
+                          "formula": "x + 0",
+                          "value": "4",
+                          "_id": "5bc64ae11757ac156920ae29"
+                        }
+                      ],
+                      "placeholder": null,
+                      "model": "increase_risk",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae57",
+                    "description": "",
+                    "label": "If you could increase your chances of improving your returns by taking more risk, would you...",
+                    "tooltip": {
+                      "title": "Planning Consideration:",
+                      "content": "Your comfort level with investment risk is important in determining how aggressively or conservatively you choose to invest."
+                    }
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae54",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "radio",
+                      "readonly": false,
+                      "options": [
+                        {
+                          "id": 0,
+                          "text": "Maintain purchasing power",
+                          "formula": "x + 2",
+                          "value": "0",
+                          "_id": "5bc64ae11757ac156920ae32"
+                        },
+                        {
+                          "id": 1,
+                          "text": "Leave to heirs with purchasing power maintained",
+                          "formula": "x + 4",
+                          "value": "1",
+                          "_id": "5bc64ae11757ac156920ae31"
+                        },
+                        {
+                          "id": 2,
+                          "text": "Support lifestyle in retirement",
+                          "formula": "x + 0",
+                          "value": "2",
+                          "_id": "5bc64ae11757ac156920ae30"
+                        }
+                      ],
+                      "placeholder": "Select an option",
+                      "model": "goal",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae55",
+                    "description": "",
+                    "label": "What do you hope to accomplish with your wealth?",
+                    "tooltip": {
+                      "content": "To properly advise, we need to understand your goals.",
+                      "title": "Your Goal"
+                    }
+                  }
+                ]
+              }
+            ],
+            "content": {
+              "button": {}
+            },
+            "complete": true,
+            "showing": false
+          },
+          {
+            "indicator": 5,
+            "ng_if": {},
+            "rows": [
+              {
+                "_id": "5bc64ae21757ac156920ae63",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "numeric",
+                      "mask": "currency",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "$0",
+                      "model": "annual_living_expenses",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae64",
+                    "description": "",
+                    "label": "What is the amount of your annual living expenses?",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae61",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "numeric",
+                      "mask": "currency",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "$0",
+                      "model": "net_liquid_assets",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae62",
+                    "description": "",
+                    "label": "Estimated Net Liquid Assets",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae5f",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "numeric",
+                      "mask": "currency",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "$100,000",
+                      "model": "current_income",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae60",
+                    "description": "",
+                    "label": "What is your current income?",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae5d",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "year_future",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "2030",
+                      "model": "period",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae5e",
+                    "description": "",
+                    "label": "When do you plan to retire?",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae5b",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "numeric",
+                      "mask": "currency",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "$0",
+                      "model": "other_savings",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae5c",
+                    "description": "",
+                    "label": "Do you expect any other savings in the future? (i.e. inheritance)",
+                    "tooltip": {}
+                  }
+                ]
+              }
+            ],
+            "content": {
+              "button": {}
+            },
+            "complete": true,
+            "showing": false
+          },
+          {
+            "indicator": 6,
+            "ng_if": {},
+            "rows": [
+              {
+                "_id": "5bc64ae21757ac156920ae6a",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "numeric",
+                      "mask": "currency",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "$0",
+                      "model": "coporate_registered_plans",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae6b",
+                    "description": "",
+                    "label": "Corporate Sponsored Registered Plans",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae68",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "numeric",
+                      "mask": "currency",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "$0",
+                      "model": "other_registered_accounts",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae69",
+                    "description": "",
+                    "label": "Other Registered Accounts",
+                    "tooltip": {}
+                  }
+                ]
+              },
+              {
+                "_id": "5bc64ae21757ac156920ae66",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "validate": "numeric",
+                      "mask": "currency",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": "$0",
+                      "model": "non_registered_accounts",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae67",
+                    "description": "",
+                    "label": "Non-registered Accounts",
+                    "tooltip": {}
+                  }
+                ]
+              }
+            ],
+            "title": "What is your current annual retirement savings?",
+            "content": {
+              "button": {}
+            },
+            "complete": true,
+            "showing": false
+          },
+          {
+            "indicator": 7,
+            "ng_if": {},
+            "rows": [
+              {
+                "_id": "5bc64ae21757ac156920ae6d",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "input_type": "input",
+                      "readonly": false,
+                      "options": [],
+                      "placeholder": null,
+                      "model": "notes_or_comments",
+                      "optional": false
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae6e",
+                    "description": "",
+                    "label": "Are there additional considerations your advisor should know?",
+                    "tooltip": {}
+                  }
+                ]
+              }
+            ],
+            "content": {
+              "button": {}
+            },
+            "complete": true,
+            "showing": false
+          },
+          {
+            "indicator": 7,
+            "ng_if": {},
+            "rows": [
+              {
+                "_id": "5bc64ae21757ac156920ae70",
+                "ng_if": {},
+                "fields": [
+                  {
+                    "input": {
+                      "readonly": false,
+                      "options": []
+                    },
+                    "width": 100,
+                    "width_m": 100,
+                    "ng_if": {},
+                    "_id": "5bc64ae21757ac156920ae71"
+                  }
+                ]
+              }
+            ],
+            "title": "use me to find me",
+            "content": {
+              "button": {
+                "text": "Continue",
+                "state": "onboarding.form"
+              },
+              "title": "Good Job! We're almost there!",
+              "subtitle": "If you're happy with this portfolio, please go ahead to the next and final section."
+            },
+            "complete": false,
+            "showing": true
+          }
+        ],
+        "onboarding_locked": false,
+        "is_client_approved": false
+      },
+      "kyc_answers": {
+        "uuid": "e6d93575-21e4-4def-baad-f578e4a8e31d",
+        "_id": "5bc7918d7655df000e79a47d",
+        "user_saved": true,
+        "formulated_answers": [],
+        "first_name": "djohal",
+        "last_name": "client",
+        "objective": "0",
+        "withdrawal": "0",
+        "withdrawal_amount": "20000",
+        "loss_comfort": "0",
+        "horizon": "0",
+        "savings": "0",
+        "investable_assets": "0",
+        "knowledge": "0",
+        "dependents": "0",
+        "debt": "0",
+        "increase_risk": "0",
+        "goal": "0",
+        "annual_living_expenses": "10000",
+        "net_liquid_assets": "025000",
+        "current_income": "20000",
+        "period": "2025",
+        "coporate_registered_plans": "0",
+        "other_registered_accounts": "15000",
+        "non_registered_accounts": "0",
+        "other_savings": "5000",
+        "notes_or_comments": "No"
+      },
+      "score_data": [
+        {
+          "first_name": 0
+        },
+        {
+          "last_name": 0
+        },
+        {
+          "objective": 0
+        },
+        {
+          "withdrawal": 0
+        },
+        {
+          "withdrawal_amount": 0
+        },
+        {
+          "loss_comfort": 0
+        },
+        {
+          "horizon": 0
+        },
+        {
+          "savings": 0
+        },
+        {
+          "investable_assets": 8
+        },
+        {
+          "knowledge": 8
+        },
+        {
+          "dependents": 13
+        },
+        {
+          "debt": 21
+        },
+        {
+          "increase_risk": 29
+        },
+        {
+          "goal": 31
+        },
+        {
+          "annual_living_expenses": 31
+        },
+        {
+          "net_liquid_assets": 31
+        },
+        {
+          "current_income": 31
+        },
+        {
+          "period": 31
+        },
+        {
+          "coporate_registered_plans": 31
+        },
+        {
+          "other_registered_accounts": 31
+        },
+        {
+          "non_registered_accounts": 31
+        },
+        {
+          "other_savings": 0
+        },
+        {
+          "notes_or_comments": 0
+        }
+      ],
+      "complete": true
+    }
+  }
+}
